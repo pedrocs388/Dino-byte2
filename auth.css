@@ -1,0 +1,181 @@
+.auth-container {
+    max-width: 500px;
+    margin: 50px auto;
+    padding: 30px;
+    background-color: var(--dark);
+    border-radius: 10px;
+    box-shadow: 0 0 20px rgba(255, 107, 0, 0.1);
+    border: 1px solid var(--primary);
+}
+
+.auth-title {
+    text-align: center;
+    color: var(--primary);
+    margin-bottom: 30px;
+    font-size: 2rem;
+}
+
+.auth-form .form-group {
+    margin-bottom: 20px;
+}
+
+.auth-form label {
+    display: block;
+    margin-bottom: 8px;
+    color: var(--light);
+    font-weight: 500;
+}
+
+.auth-form input {
+    width: 100%;
+    padding: 12px 15px;
+    border-radius: 5px;
+    border: 1px solid var(--gray);
+    background-color: var(--secondary);
+    color: var(--light);
+    font-size: 1rem;
+}
+
+.auth-form input:focus {
+    border-color: var(--primary);
+    outline: none;
+}
+
+.profile-pic-upload {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    margin-bottom: 20px;
+}
+
+.profile-pic-preview {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    background-color: var(--secondary);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+    border: 2px solid var(--primary);
+}
+
+.profile-pic-preview img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.profile-pic-preview i {
+    font-size: 2rem;
+    color: var(--gray);
+}
+
+.upload-btn {
+    background-color: var(--primary);
+    color: white;
+    padding: 10px 15px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.upload-btn:hover {
+    background-color: var(--primary-dark);
+}
+
+#profilePic {
+    display: none;
+}
+
+.auth-form .btn {
+    width: 100%;
+    padding: 12px;
+    font-size: 1.1rem;
+    margin-top: 10px;
+}
+
+.auth-link {
+    text-align: center;
+    margin-top: 20px;
+    color: var(--gray);
+}
+
+.auth-link a {
+    color: var(--primary);
+    text-decoration: none;
+}
+
+.auth-link a:hover {
+    text-decoration: underline;
+}
+
+.error-message {
+    color: #ff4444;
+    font-size: 0.9rem;
+    margin-top: 5px;
+    display: none;
+}
+
+.success-message {
+    color: #00C851;
+    font-size: 0.9rem;
+    margin-top: 5px;
+    display: none;
+}
+
+.age-verification {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-top: 10px;
+}
+
+.age-verification input {
+    width: auto;
+}
+
+.age-verification label {
+    margin-bottom: 0;
+    font-size: 0.9rem;
+}
+
+.auth-header {
+    background-color: var(--secondary);
+    padding: 15px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 2px solid var(--primary);
+}
+
+.auth-header .logo {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.auth-header .logo img {
+    height: 40px;
+}
+
+.auth-header .logo h1 {
+    color: var(--primary);
+    font-size: 1.5rem;
+}
+
+@media (max-width: 768px) {
+    .auth-container {
+        margin: 20px;
+        padding: 20px;
+    }
+    
+    .auth-title {
+        font-size: 1.5rem;
+    }
+    
+    .profile-pic-upload {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+}
